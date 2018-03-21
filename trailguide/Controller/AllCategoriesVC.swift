@@ -33,6 +33,18 @@ class AllCategoriesVC: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = categories[indexPath.row]
+        performSegue(withIdentifier: "SpecificCategoryVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let specificCategoryVC = segue.destination as? SpecificCategoryVC {
+            assert(sender as? Category != nil)
+            specificCategoryVC.initItems(category: sender as! Category)
+        }
+    }
+    
     @IBAction func infoBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "toAppInfo", sender: nil)
     }
