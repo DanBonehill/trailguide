@@ -12,10 +12,12 @@ struct Item {
     public private(set) var title: String
     public private(set) var image: String
     public private(set) var description: String
+    public private(set) var category: String
     
-    init(title: String, image: String, description: String) {
+    init(title: String, image: String, description: String, category: String) {
         self.title = title
         self.image = image
         self.description = description
+        self.category = category
     }
 }

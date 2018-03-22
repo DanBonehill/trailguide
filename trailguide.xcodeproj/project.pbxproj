@@ -20,6 +20,7 @@
 		3123A521205D980600403CEE /* SpecificCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123A520205D980600403CEE /* SpecificCategoryVC.swift */; };
 		31CF0A77205DC1C000BC6F35 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF0A76205DC1C000BC6F35 /* ItemCell.swift */; };
 		31CF0A79205DC27000BC6F35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF0A78205DC27000BC6F35 /* Item.swift */; };
+		31D8C6512062DA3C003F94D1 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C6502062DA3C003F94D1 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3123A520205D980600403CEE /* SpecificCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificCategoryVC.swift; sourceTree = "<group>"; };
 		31CF0A76205DC1C000BC6F35 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		31CF0A78205DC27000BC6F35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		31D8C6502062DA3C003F94D1 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3123A502205C268800403CEE /* AllCategoriesVC.swift */,
 				3123A51E205D89C000403CEE /* AppInfoVC.swift */,
 				3123A520205D980600403CEE /* SpecificCategoryVC.swift */,
+				31D8C6502062DA3C003F94D1 /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				31CF0A79205DC27000BC6F35 /* Item.swift in Sources */,
 				3123A521205D980600403CEE /* SpecificCategoryVC.swift in Sources */,
+				31D8C6512062DA3C003F94D1 /* DetailVC.swift in Sources */,
 				3123A503205C268800403CEE /* AllCategoriesVC.swift in Sources */,
 				31CF0A77205DC1C000BC6F35 /* ItemCell.swift in Sources */,
 				3123A501205C268800403CEE /* AppDelegate.swift in Sources */,

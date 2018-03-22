@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbp-nh-eAu" customClass="LogoLabel" customModule="trailguide" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="33" width="134.66666666666663" height="34.666666666666657"/>
+                                        <rect key="frame" x="140.33333333333337" y="33" width="134.66666666666663" height="34.666666666666657"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -68,13 +68,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hikingBG" translatesAutoresizingMaskIntoConstraints="NO" id="1q4-id-4Qt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="140" id="r4Q-C0-eei"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTC-N6-Np3">
-                                                    <rect key="frame" x="110.66666666666667" y="36.333333333333336" width="193.33333333333331" height="68.333333333333314"/>
+                                                    <rect key="frame" x="91.333333333333329" y="36.333333333333336" width="193.33333333333337" height="68.333333333333314"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="50"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -131,7 +131,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-ke-yQq" customClass="LogoLabel" customModule="trailguide" customModuleProvider="target">
-                                        <rect key="frame" x="140.33333333333337" y="33" width="134.66666666666663" height="34.666666666666657"/>
+                                        <rect key="frame" x="139.66666666666669" y="33" width="134.66666666666669" height="34.666666666666657"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -230,11 +230,110 @@
                         <outlet property="categoryImage" destination="Fuw-L1-bvG" id="kzZ-yp-Ndm"/>
                         <outlet property="itemCollection" destination="erP-Y4-qHH" id="uZ9-y5-qWn"/>
                         <outlet property="titleLbl" destination="L4H-PA-k3Y" id="w9g-Ch-flH"/>
+                        <segue destination="RZc-ym-xYs" kind="show" identifier="toDetailVC" id="JvS-Oc-VyF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBr-Od-Tci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943.47826086956525" y="132.06521739130434"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="cTD-FD-Osa">
+            <objects>
+                <viewController id="RZc-ym-xYs" customClass="DetailVC" customModule="trailguide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0VC-iM-PX5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-0C-22K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCJ-gS-aFr" customClass="LogoLabel" customModule="trailguide" customModuleProvider="target">
+                                        <rect key="frame" x="139.66666666666669" y="32.666666666666671" width="134.66666666666669" height="34.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrP-dN-mBP">
+                                        <rect key="frame" x="15" y="40.333333333333336" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="AlQ-Vf-Y6a"/>
+                                            <constraint firstAttribute="height" constant="20" id="Blw-j0-Qev"/>
+                                        </constraints>
+                                        <state key="normal" image="backBtn"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="A90-Fv-yrh" eventType="touchUpInside" id="1cR-b1-cG0"/>
+                                            <action selector="backBtnPressed:" destination="RZc-ym-xYs" eventType="touchUpInside" id="3qt-tz-4Ef"/>
+                                            <action selector="infoBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwR-n9-WAt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SrP-dN-mBP" firstAttribute="centerY" secondItem="MCJ-gS-aFr" secondAttribute="centerY" id="7nx-fD-7qu"/>
+                                    <constraint firstAttribute="height" constant="70" id="AAs-5k-W3f"/>
+                                    <constraint firstItem="SrP-dN-mBP" firstAttribute="leading" secondItem="Cxm-0C-22K" secondAttribute="leading" constant="15" id="Lnh-aR-UNQ"/>
+                                    <constraint firstItem="MCJ-gS-aFr" firstAttribute="centerX" secondItem="Cxm-0C-22K" secondAttribute="centerX" id="Y6q-zZ-6ES"/>
+                                    <constraint firstItem="MCJ-gS-aFr" firstAttribute="centerY" secondItem="Cxm-0C-22K" secondAttribute="centerY" constant="15" id="Zxe-Cp-D7e"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleepingBag" translatesAutoresizingMaskIntoConstraints="NO" id="93D-3y-fOc">
+                                <rect key="frame" x="84" y="78" width="246" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="bhl-jV-UAY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campingBG" translatesAutoresizingMaskIntoConstraints="NO" id="Wcu-14-ezP">
+                                <rect key="frame" x="0.0" y="334" width="414" height="402"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEEPING BAG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaj-6m-xGQ">
+                                <rect key="frame" x="64" y="339" width="284.33333333333331" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="YaJ-R4-hqy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WO4-pK-cux">
+                                <rect key="frame" x="20" y="402" width="374" height="314"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat rhoncus bibendum. Integer eu arcu ut lacus rutrum vehicula et vel augue. Phasellus vitae ipsum nec libero ornare commodo sit amet iaculis nulla. Cras id fermentum metus. Nulla facilisi. Aenean ultrices nulla tellus, vitae egestas sem varius ac. Vestibulum tristique sapien quis leo tempor, at aliquet lorem suscipit.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="93D-3y-fOc" firstAttribute="top" secondItem="Cxm-0C-22K" secondAttribute="bottom" constant="8" id="5eo-lU-R6G"/>
+                            <constraint firstItem="WO4-pK-cux" firstAttribute="top" secondItem="Oaj-6m-xGQ" secondAttribute="bottom" constant="8" id="9gr-MR-8dF"/>
+                            <constraint firstItem="Wcu-14-ezP" firstAttribute="top" secondItem="93D-3y-fOc" secondAttribute="bottom" constant="10" id="BPh-oS-qxY"/>
+                            <constraint firstItem="Cxm-0C-22K" firstAttribute="trailing" secondItem="ltb-bc-n0h" secondAttribute="trailing" id="CgU-nd-hYn"/>
+                            <constraint firstItem="WO4-pK-cux" firstAttribute="leading" secondItem="ltb-bc-n0h" secondAttribute="leading" constant="20" id="FKD-2P-dEe"/>
+                            <constraint firstAttribute="bottom" secondItem="Wcu-14-ezP" secondAttribute="bottom" id="H0e-Sb-kC5"/>
+                            <constraint firstItem="ltb-bc-n0h" firstAttribute="trailing" secondItem="WO4-pK-cux" secondAttribute="trailing" constant="20" id="NGZ-T3-Yho"/>
+                            <constraint firstItem="Oaj-6m-xGQ" firstAttribute="top" secondItem="93D-3y-fOc" secondAttribute="bottom" constant="15" id="P9m-Id-0sa"/>
+                            <constraint firstItem="Cxm-0C-22K" firstAttribute="top" secondItem="0VC-iM-PX5" secondAttribute="top" id="XFM-4A-r7M"/>
+                            <constraint firstItem="Cxm-0C-22K" firstAttribute="leading" secondItem="ltb-bc-n0h" secondAttribute="leading" id="ZjN-KV-DbL"/>
+                            <constraint firstItem="Wcu-14-ezP" firstAttribute="trailing" secondItem="ltb-bc-n0h" secondAttribute="trailing" id="beN-Fn-JaT"/>
+                            <constraint firstItem="Wcu-14-ezP" firstAttribute="leading" secondItem="ltb-bc-n0h" secondAttribute="leading" id="fCa-JX-faT"/>
+                            <constraint firstItem="93D-3y-fOc" firstAttribute="leading" secondItem="ltb-bc-n0h" secondAttribute="leading" constant="84" id="hqt-ew-AEC"/>
+                            <constraint firstItem="ltb-bc-n0h" firstAttribute="trailing" secondItem="93D-3y-fOc" secondAttribute="trailing" constant="84" id="sQI-B0-fvW"/>
+                            <constraint firstItem="Oaj-6m-xGQ" firstAttribute="centerX" secondItem="0VC-iM-PX5" secondAttribute="centerX" id="vfe-UA-z18"/>
+                            <constraint firstItem="ltb-bc-n0h" firstAttribute="bottom" secondItem="WO4-pK-cux" secondAttribute="bottom" constant="20" id="xTK-8A-s48"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ltb-bc-n0h"/>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="Wcu-14-ezP" id="dL6-lb-AHi"/>
+                        <outlet property="itemDescription" destination="WO4-pK-cux" id="abl-He-dh5"/>
+                        <outlet property="itemImage" destination="93D-3y-fOc" id="eqn-HG-zSm"/>
+                        <outlet property="itemTitle" destination="Oaj-6m-xGQ" id="GfS-Tc-f2L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5T-3q-D3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="131.25"/>
         </scene>
         <!--App InfoVC-->
         <scene sceneID="ZNx-kN-rsJ">
@@ -1419,5 +1518,6 @@ AAAAAAAEAQAAAAAAAABZAAAAAAAAAAAAAAAAAAEBlw
 </mutableData>
         </image>
         <image name="infoBtn" width="21" height="21"/>
+        <image name="sleepingBag" width="133" height="113"/>
     </resources>
 </document>

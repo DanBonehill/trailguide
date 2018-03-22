@@ -47,6 +47,18 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDelegate, UICollecti
         return ItemCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        performSegue(withIdentifier: "toDetailVC", sender: item)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? DetailVC {
+            assert(sender as? Item != nil)
+            detailVC.initItem(item: sender as! Item)
+        }
+    }
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
